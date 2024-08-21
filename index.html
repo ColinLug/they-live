@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v2.1.0/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+    <title>Scene</title>
+</head>
+<body>
+    <script src="https://rawcdn.githack.com/mrdoob/three.js/r87/examples/js/loaders/GLTFLoader.js"></script>
+    <a-scene id="principale" physics="friction: 0.1; restitution: 0">
+        <a-asset>
+            <a-asset-item id="pig" src="assets/pig.glb"></a-asset-item>
+            <a-asset-item id="chicken" src="assets/chicken.glb"></a-asset-item>
+            <a-asset-item id="sheep" src="assets/sheep.glb"></a-asset-item>
+            <a-asset-item id="cow" src="assets/cow.glb"></a-asset-item>
+            <a-asset-item id="duck" src="assets/duck.glb"></a-asset-item>
+        </a-asset>
+        <a-camera>
+            <a-cursor color="grey"></a-cursor>
+        </a-camera>
+        <a-sky color="blue"></a-sky>
+        <a-plane id="sol" position="0 0 0" height="1000" width="1000" rotation="-90 0 0" repeat="500 500" color="#FF2724" static-body></a-plane>
+        <a-box id="base-button" width="1" height="0.3" depth="1" material="color: grey" position="-3 0.125 -5" static-body></a-box>
+        <a-cylinder id="refresh-button" scale="0.3 0.5 0.3" position="-3 0.25 -5" color="red"></a-cylinder>
+        <a-cylinder id="refresh-button-border" scale="0.31 0.51 0.31" position="-3 0.25 -5" color="black" side="back"></a-cylinder>
+        <a-text id="statut" value="Click on the button" position="-3 1 -5" align="center"></a-text>
+        <a-cylinder id="panel-stick" scale="0.05 1.7 0.05" color="#A56F00" position="-1 0 -5"></a-cylinder>
+        <a-box id="panel" height="1" width="1.5" depth="0.1" color="#A56F00" position="-1 1.2 -5" rotation="0 -15 0"></a-box>
+        <a-text id="panel-text" value="Here is the representation of the number of animals killed on earth for their meat each \n\n\t" 
+        rotation="0 -15 0" position="-1 1.2 -4.9" align="center" width="1.4" wrapcount="30" text="wrapCount:20;color:#241f31"></a-text>
+        <a-box position="-18 7 -7" depth="1" color="black" rotation="0 90 0" material="color:#000000" geometry="height:30;width:30" static-body></a-box>
+        <a-box position="-3 7 -22" depth="1" color="black" material="color:#000000" geometry="height:30;width:30" static-body></a-box>
+        <a-box position="-3 21.5 -7" depth="1" color="black" rotation="90 0 0" material="color:#000000" geometry="height:30;width:30" static-body></a-box>
+        <a-box position="12 7 -7" depth="1" color="black" rotation="180 90 0" material="color:#000000" geometry="height:30;width:30" static-body></a-box>
+    </a-scene>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- <a-box id="box" dynamic-body="mass: 2; shape: box; sphereRadius: NaN" position="0 10 -3" width="1" height="1" depth="1" color="red" velocity="" rotation="34.704 -14.662000000000003 -10.889"></a-box> -->
