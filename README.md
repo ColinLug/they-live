@@ -14,3 +14,6 @@ The 3D model of the fish is on Public Domain and modified on blender: https://cr
 For the land animals the datas are retrieved from Our World in Data (https://ourworldindata.org/grapher/animals-slaughtered-for-meat) for the 2022 year. The time interval is then calculated by imagining a linear distribution of the number of animals killed. Here are the details of the calculation, where "x" corresponds to the number of individuals slaughtered each year and "y" the number of 3D models displayed on screen: y*(365*24*60*60)/x seconds.
 
 For the wild fishes the datas are retrieved from Our World in Data (https://ourworldindata.org/grapher/wild-caught-fish) for the 2016 year and by taking the midpoint estimate. The time interval is calculated as above.
+
+## Development contex
+This project was developed as part of the “Visualisation de données” course taught by Isaac Pante (SLI, Lettres, UNIL).
