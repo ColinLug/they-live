@@ -11,9 +11,9 @@ The 3D models of the land animals (chicken, pigs, cows and ducks) are on Public 
 The 3D model of the fish is on Public Domain and modified on blender: https://creazilla.com/media/3d-model/5208/set-of-fish
 
 ### Sources
-For the land animals the datas are retrieved from Our World in Data (https://ourworldindata.org/grapher/animals-slaughtered-for-meat) for the 2022 year. The time interval is then calculated by imagining a linear distribution of the number of animals killed. Here are the details of the calculation, where "x" corresponds to the number of individuals slaughtered each year and "y" the number of 3D models displayed on screen: y*(365*24*60*60)/x seconds.
+For the land animals the datas are retrieved from Our World in Data (Food and Agriculture Organization of the United Nations (2023) – with major processing by Our World in Data. “Number of cattle slaughtered for meat – FAO” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data], https://ourworldindata.org/grapher/animals-slaughtered-for-meat) for the 2022 year. The time interval is then calculated by imagining a linear distribution of the number of animals killed. Here are the details of the calculation, where "x" corresponds to the number of individuals slaughtered each year and "y" the number of 3D models displayed on screen: y*(365*24*60*60)/x seconds.
 
-For the wild fishes the datas are retrieved from Our World in Data (https://ourworldindata.org/grapher/wild-caught-fish) for the 2016 year and by taking the midpoint estimate. The time interval is calculated as above.
+For the wild fishes the datas are retrieved from Our World in Data (Fishcount (2018) – processed by Our World in Data. “Midpoint estimate” [dataset]. Fishcount, “Number of individual wild fish killed for food” [original data], https://ourworldindata.org/grapher/wild-caught-fish) for the 2016 year and by taking the midpoint estimate. The time interval is calculated as above.
 
 ## Development contex
 This project was developed as part of the “Visualisation de données” course taught by Isaac Pante (SLI, Lettres, UNIL).
