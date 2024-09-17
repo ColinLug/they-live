@@ -4,6 +4,8 @@ This VR scene shows the number of animals killed for their flesh worldwide in a 
 To explore this scene, you can download all the files on the repository. Then you need to open the "index.html" file in VS Code (or use a local server) and open via go live (live server extension).
 ![alt-text](https://github.com/ColinLug/horror-scene/blob/main/gif_horror_scene.gif)
 (Note : some difficulties with the screen's streaming have added some lag to the gif, the experience should be more fluid)
+## History
+
 ## Ressources
 ### Assets
 The 3D models of the land animals (chicken, pigs, cows and ducks) are on Public Domain : https://creazilla.com/media/3d-model/67711/low-poly-farm-animals
@@ -15,5 +17,5 @@ For the land animals the datas are retrieved from Our World in Data (Food and Ag
 
 For the wild fishes the datas are retrieved from Our World in Data (Fishcount (2018) – processed by Our World in Data. “Midpoint estimate” [dataset]. Fishcount, “Number of individual wild fish killed for food” [original data], https://ourworldindata.org/grapher/wild-caught-fish) for the 2016 year and by taking the midpoint estimate. The time interval is calculated as above.
 
-## Development contex
+## Development context
 This project was developed as part of the “Visualisation de données” course taught by Isaac Pante (SLI, Lettres, UNIL).
