@@ -65,7 +65,6 @@ function disposeModel(modelEntity) {
             if (node.geometry) {
                 node.geometry.dispose();
             }
-
             // Libérer les matériaux
             if (node.material) {
                 if (Array.isArray(node.material)) {
@@ -102,10 +101,11 @@ function afficherAnimaux(animal){
                 animalData.load(`assets/${animal}.glb`, function (gltf) {
                     let entity = document.createElement('a-entity');
                     const model = gltf.scene;
+                    let randomColor = Math.floor(Math.random()*16777215).toString(16); //Code from Chris Coyier, https://css-tricks.com/snippets/javascript/random-hex-color/
                     model.traverse((child) => {
                         if (child.isMesh) {
                             child.material = new THREE.MeshStandardMaterial({
-                                color: 0xF6F4F4
+                                color: `#${randomColor}`
                             });
                         }
                     });
@@ -115,6 +115,7 @@ function afficherAnimaux(animal){
                     entity.setAttribute('id', `${animal}${i}${j}${k}`);
                     entity.setAttribute('dynamic-body', "shape: box, restitution:0");
                     entity.setAttribute('class', `animals`);
+                    entity.setAttribute('scale', `${1-(Math.random()/4)} ${1-(Math.random()/4)} ${1-(Math.random()/4)}`)
                     entity.addEventListener('collide', ()=>{
                         let body = entity.body
                         body.velocity.set(0,0,0)
@@ -122,7 +123,6 @@ function afficherAnimaux(animal){
                         body.sleep();
                     })
                     scene.appendChild(entity);
-                    // resolve();
                 })
             }
         }
