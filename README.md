@@ -2,8 +2,9 @@
 ## Description
 This VR scene shows the number of animals killed for their flesh worldwide in a given number of seconds. It is designed to challenge the immense number of lives taken by humankind from the animal world. The 5 3D models of the animals are displayed by clicking on the button in front of the user, and cycle with each press. For sources and figures, see below.
 To explore this scene, you can download all the files on the repository. Then you need to open the "index.html" file in VS Code (or use a local server) and open via go live (live server extension).
+
 ![alt-text](https://github.com/ColinLug/horror-scene/blob/main/gif_horror_scene.gif)
-(Note : some difficulties with the screen's streaming have added some lag to the gif, the experience should be more fluid. Also some changes have been made of the final project)
+
 ## About the Data
 ### History
 Data from the FAO for the number of land animals killed for their meat (in this case, cows, chickens, pigs and ducks) shows a net increase since 1961 at global level in 2022. However, the population has also evolved, and it would be unfair to compare these data without noting this. After taking into account population trends between 1961 and 2022, we can see an overall increase in the ratio of animals killed per inhabitant. The only exception is the number of cows killed for their meat, which has fallen in relation to population growth. The biggest changes are in chickens and ducks. On average, the world's population will consume around 3x as many chickens and 4x as many ducks in 2022 as in 1961. It's interesting to compare these figures with those for Switzerland. While Swiss people generally kill 2x less beef and very slightly fewer pigs per capita, more than 11x as many chickens have been killed for their meat since 1961. It should be remembered that this figure does not represent consumption, but rather animals killed on Swiss soil. On the contrary, global figures allow us to deduce the annual consumption of meat by humans on Earth. Here is a summary table with the figures used (formula for relative change: [(y-x)/x]*100 where x are 1961 figures and y are 2022 figures).
